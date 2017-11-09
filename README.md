@@ -14,4 +14,4 @@
 
 # Demo
 
-A current demo is running at http://hat.fokus.fraunhofer.de/wordpress/mpat/
+A current demo is running at http://demo.mpat.eu/application/
