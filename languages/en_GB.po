@@ -1,0 +1,478 @@
+# Copyright (C) 2017 MPAT.eu
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MPAT 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mpat-theme\n"
+"POT-Creation-Date: 2017-10-03 11:11+0200\n"
+"PO-Revision-Date: 2017-10-03 11:11+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:7
+msgid "Page not found"
+msgstr ""
+
+#: functions.php:50
+msgid "Full Page"
+msgstr ""
+
+#: functions.php:222 functions.php:233
+msgid "Frontpage"
+msgstr ""
+
+#: functions.php:224
+msgid "Select the page to be displayed on the front"
+msgstr ""
+
+#: functions.php:240
+msgid "General Settings"
+msgstr ""
+
+#: functions.php:241
+msgid "Modify the theme settings"
+msgstr ""
+
+#: functions.php:247
+msgid "Application background"
+msgstr ""
+
+#: functions.php:248
+msgid "Modify the Default Background "
+msgstr ""
+
+#: functions.php:266
+msgid "Backgroud color"
+msgstr "Backgroud colour"
+
+#: functions.php:270
+msgid "Backgroud video"
+msgstr ""
+
+#: functions.php:274
+msgid "Background image (1280x720px)"
+msgstr ""
+
+#: functions.php:283
+msgid "Focused Component Styles"
+msgstr ""
+
+#: functions.php:284
+msgid "Modify Global Focused Component Style Settings"
+msgstr ""
+
+#: functions.php:293 functions.php:298
+msgid "Border color"
+msgstr "Border colour"
+
+#: functions.php:311
+msgid "Border width (in px, 1-50)"
+msgstr ""
+
+#: functions.php:321
+msgid "Border radius (in px, 1-50)"
+msgstr ""
+
+#: functions.php:331
+msgid "Icon Set"
+msgstr ""
+
+#: functions.php:332 functions.php:454
+msgid "Set Icon Color Theme for your App"
+msgstr "Set Icon Colour Theme for your App"
+
+#: functions.php:381
+msgid "Icons"
+msgstr ""
+
+#: functions.php:382
+msgid "Choose Icon Color"
+msgstr "Choose Icon Colour"
+
+#: functions.php:388
+msgid "Icon Color opacity:"
+msgstr "Icon Colour opacity:"
+
+#: functions.php:396
+msgid "Icons focused"
+msgstr ""
+
+#: functions.php:397
+msgid "Choose Icon Color focused"
+msgstr "Choose Icon Colour focused"
+
+#: functions.php:403
+msgid "Icon Color focused opacity:"
+msgstr "Icon Colour focused opacity:"
+
+#: functions.php:411
+msgid "Icons active"
+msgstr ""
+
+#: functions.php:412
+msgid "Choose Icon Color active"
+msgstr "Choose Icon Colour active"
+
+#: functions.php:418
+msgid "Icon Color active opacity:"
+msgstr "Icon Colour active opacity:"
+
+#: functions.php:426
+msgid "PageFlow Apps"
+msgstr ""
+
+#: functions.php:427
+msgid "Choose PageFlow Arrow Color"
+msgstr "Choose PageFlow Arrow Colour"
+
+#: functions.php:433
+msgid "PageFlow Arrows size:"
+msgstr ""
+
+#: functions.php:443
+msgid "PageFlow Arrows opacity:"
+msgstr ""
+
+#: functions.php:453
+msgid "Remote keys icons"
+msgstr "Remote keys icons"
+
+#: functions.php:499
+msgid "Components Settings"
+msgstr ""
+
+#: functions.php:499
+msgid "Modify Components styles Settings"
+msgstr ""
+
+#: functions.php:505 functions.php:587
+msgid "Menu"
+msgstr ""
+
+#: functions.php:505 functions.php:587
+msgid "Modify Global General Menu Settings"
+msgstr ""
+
+#: functions.php:508 functions.php:590
+msgid "Menu Font Size in px"
+msgstr ""
+
+#: functions.php:511 functions.php:593
+msgid "Menu Line Height in px"
+msgstr ""
+
+#: functions.php:532 functions.php:614
+msgid "Menu padding in px"
+msgstr ""
+
+#: functions.php:535 functions.php:617
+msgid "Menu border width in px"
+msgstr ""
+
+#: functions.php:538 functions.php:620
+msgid "Menu border radius in px"
+msgstr ""
+
+#: functions.php:542 functions.php:624
+msgid "Menu border color"
+msgstr ""
+
+#: functions.php:547 functions.php:629
+msgid "Menu font color"
+msgstr ""
+
+#: functions.php:550 functions.php:632
+msgid "Menu background color"
+msgstr ""
+
+#: functions.php:553 functions.php:635
+msgid "Menu item ACTIVE Font Size in px"
+msgstr ""
+
+#: functions.php:556 functions.php:638
+msgid "Menu item ACTIVE Line Height in px"
+msgstr ""
+
+#: functions.php:577 functions.php:659
+msgid "Menu item ACTIVE Font Color"
+msgstr ""
+
+#: functions.php:580 functions.php:662
+msgid "Menu item ACTIVE Line Background Color"
+msgstr ""
+
+#: functions.php:666
+msgid "Side Menu"
+msgstr ""
+
+#: functions.php:666
+msgid "Modify Global Menu settings"
+msgstr ""
+
+#: functions.php:669
+msgid "Edit Background Color"
+msgstr "Edit Background Colour"
+
+#: functions.php:672 functions.php:769 functions.php:865
+msgid "Font Size in px"
+msgstr ""
+
+#: functions.php:675
+msgid "Line Height in px"
+msgstr ""
+
+#: functions.php:678 functions.php:875
+msgid "Edit Font Color"
+msgstr ""
+
+#: functions.php:681
+msgid "Edit ACTIVE Font Color"
+msgstr ""
+
+#: functions.php:684
+msgid "Edit ACTIVE Line Background Color"
+msgstr "Edit ACTIVE Line Background Colour"
+
+#: functions.php:687
+msgid "Edit Separator Color"
+msgstr "Edit Separator Colour"
+
+#: functions.php:690
+msgid "Width in px"
+msgstr ""
+
+#: functions.php:693
+msgid "Launcher"
+msgstr ""
+
+#: functions.php:693
+msgid "Modify the Global Launcher Settings"
+msgstr ""
+
+#: functions.php:696
+msgid "Launcher Font Size in px"
+msgstr ""
+
+#: functions.php:699
+msgid "Launcher Line Height in px"
+msgstr ""
+
+#: functions.php:729
+msgid "Edit Launcher Font Color"
+msgstr "Edit Launcher Font Colour"
+
+#: functions.php:730
+msgid "Edit Launcher Background Font Color"
+msgstr "Edit Launcher Background Font Colour"
+
+#: functions.php:731
+msgid "Edit Launcher Font Color - focused"
+msgstr "Edit Launcher Font Colour - focused"
+
+#: functions.php:732
+msgid "Edit Launcher Background Font Color - focused"
+msgstr "Edit Launcher Background Font Colour - focused"
+
+#: functions.php:733
+msgid "Edit Launcher Border Color - focused"
+msgstr ""
+
+#: functions.php:736
+msgid "Video Player Settings"
+msgstr ""
+
+#: functions.php:736
+msgid "Modify Global Video Player Settings"
+msgstr ""
+
+#: functions.php:754
+msgid "Player Control Height in px"
+msgstr ""
+
+#: functions.php:759
+msgid "Player Controls Background Color"
+msgstr "Player Controls Background Colour"
+
+#: functions.php:764
+msgid "Player Controls Highlight Color"
+msgstr "Player Controls Highlight Colour"
+
+#: functions.php:776
+msgid "Video loading animation"
+msgstr ""
+
+#: functions.php:777
+msgid "Video play button"
+msgstr ""
+
+#: functions.php:778
+msgid "Video pause button"
+msgstr ""
+
+#: functions.php:779
+msgid "Video stop button"
+msgstr ""
+
+#: functions.php:780
+msgid "Video forward button"
+msgstr ""
+
+#: functions.php:781
+msgid "Video rewind button"
+msgstr ""
+
+#: functions.php:782
+msgid "Video fullscreen button"
+msgstr ""
+
+#: functions.php:783
+msgid "Video exit fullscreen button"
+msgstr ""
+
+#: functions.php:784
+msgid "Video arrow left button"
+msgstr ""
+
+#: functions.php:785
+msgid "Video arrow right button"
+msgstr ""
+
+#: functions.php:786
+msgid "Video zoom in button"
+msgstr ""
+
+#: functions.php:787
+msgid "Video zoom out button"
+msgstr ""
+
+#: functions.php:808
+msgid "Gallery"
+msgstr ""
+
+#: functions.php:808
+msgid "Modify Global Gallery Settings"
+msgstr ""
+
+#: functions.php:811
+msgid "Gallery background color"
+msgstr ""
+
+#: functions.php:814
+msgid "Gallery arrow color"
+msgstr ""
+
+#: functions.php:817
+msgid "Gallery arrow background color"
+msgstr ""
+
+#: functions.php:820
+msgid "Gallery arrow size in px"
+msgstr ""
+
+#: functions.php:823
+msgid "Gallery arrow padding in px"
+msgstr ""
+
+#: functions.php:826
+msgid "Gallery arrow border radius in px"
+msgstr ""
+
+#: functions.php:829
+msgid "Gallery dots color"
+msgstr ""
+
+#: functions.php:832
+msgid "Gallery dot focused color "
+msgstr ""
+
+#: functions.php:843
+msgid "Audio Settings"
+msgstr ""
+
+#: functions.php:844
+msgid "Modify Global Audio Settings soon"
+msgstr ""
+
+#: functions.php:849
+msgid "Font Settings"
+msgstr ""
+
+#: functions.php:850 functions.php:857
+msgid "Modify Global Font Settings"
+msgstr ""
+
+#: functions.php:856
+msgid "Text"
+msgstr ""
+
+#: functions.php:870
+msgid "Line height in px (usually 1.5 times the font size)"
+msgstr ""
+
+#: functions.php:881
+msgid "Headlines"
+msgstr "Headlines"
+
+#: functions.php:882
+msgid "Set Headline Settings for your App"
+msgstr ""
+
+#: functions.php:928
+msgid "Links"
+msgstr ""
+
+#: functions.php:929
+msgid "Modify Global Link Settings"
+msgstr ""
+
+#: functions.php:939
+msgid "Link Size in px"
+msgstr ""
+
+#: functions.php:944
+msgid "Edit Link Color"
+msgstr "Edit Link Colour"
+
+#: functions.php:969
+msgid "Edit Link Color active"
+msgstr "Edit Link Colour active"
+
+#: functions.php:979
+msgid "Social Feed Settings"
+msgstr ""
+
+#: functions.php:980
+msgid "Modify Global Social Feed Settings soon"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "MPAT"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://mpat.eu/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This official MPAT theme for WordPress takes us a big step forward to the "
+"world of HbbTV. Together with the MPAT Core Plugin and its new range of mail "
+"formats, page layout and model, this is a complete editing solution."
+msgstr ""
+"This official MPAT theme for WordPress takes us a big step forward to the "
+"world of HbbTV. Together with the MPAT Core Plugin and its new range of mail "
+"formats, page layout and model, this is a complete editing solution."
+
+#. Author of the plugin/theme
+msgid "MPAT.eu"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr ""

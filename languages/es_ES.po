@@ -1,0 +1,518 @@
+# Copyright (C) 2017 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MPAT 1.0.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mpat-theme\n"
+"POT-Creation-Date: 2017-10-03 11:12+0200\n"
+"PO-Revision-Date: 2017-10-03 11:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:7
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: functions.php:50
+msgid "Full Page"
+msgstr "Página completa"
+
+#: functions.php:222 functions.php:233
+msgid "Frontpage"
+msgstr "Primera página"
+
+#: functions.php:224
+msgid "Select the page to be displayed on the front"
+msgstr "Seleccione la página que se mostrará en la"
+
+#: functions.php:240
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: functions.php:241
+msgid "Modify the theme settings"
+msgstr "Modificar la configuración del tema"
+
+#: functions.php:247
+msgid "Application background"
+msgstr "Antecedentes de la aplicación"
+
+#: functions.php:248
+msgid "Modify the Default Background "
+msgstr "Modificar el fondo predeterminado "
+
+#: functions.php:266
+msgid "Backgroud color"
+msgstr "Color de fondo"
+
+#: functions.php:270
+msgid "Backgroud video"
+msgstr "Vídeo de fondo"
+
+#: functions.php:274
+msgid "Background image (1280x720px)"
+msgstr "Imagen de fondo (1280x720px)"
+
+#: functions.php:283
+msgid "Focused Component Styles"
+msgstr "Estilos de componentes enfocados"
+
+#: functions.php:284
+msgid "Modify Global Focused Component Style Settings"
+msgstr "Modificar configuración de estilo de componente enfocado global"
+
+#: functions.php:293 functions.php:298
+msgid "Border color"
+msgstr "Color del borde"
+
+#: functions.php:311
+msgid "Border width (in px, 1-50)"
+msgstr "Ancho del borde (en px, 1-50)"
+
+#: functions.php:321
+msgid "Border radius (in px, 1-50)"
+msgstr "Radio de borde (en px, 1-50)"
+
+#: functions.php:331
+msgid "Icon Set"
+msgstr "Conjunto de iconos"
+
+#: functions.php:332 functions.php:454
+msgid "Set Icon Color Theme for your App"
+msgstr "Configurar tema de color de icono para tu aplicación"
+
+#: functions.php:381
+msgid "Icons"
+msgstr "Iconos"
+
+#: functions.php:382
+msgid "Choose Icon Color"
+msgstr "Elegir el color del icono"
+
+#: functions.php:388
+msgid "Icon Color opacity:"
+msgstr "Icono Color opacidad:"
+
+#: functions.php:396
+msgid "Icons focused"
+msgstr "Iconos enfocados"
+
+#: functions.php:397
+msgid "Choose Icon Color focused"
+msgstr "Elija Icono Color enfocado"
+
+#: functions.php:403
+msgid "Icon Color focused opacity:"
+msgstr "Icono Color enfocado opacidad:"
+
+#: functions.php:411
+msgid "Icons active"
+msgstr "Iconos activos"
+
+#: functions.php:412
+msgid "Choose Icon Color active"
+msgstr "Elegir Icono Color activo"
+
+#: functions.php:418
+msgid "Icon Color active opacity:"
+msgstr "Icono Color opacidad activa:"
+
+#: functions.php:426
+msgid "PageFlow Apps"
+msgstr "Aplicaciones PageFlow"
+
+#: functions.php:427
+msgid "Choose PageFlow Arrow Color"
+msgstr "Elija PageFlow Arrow Color"
+
+#: functions.php:433
+msgid "PageFlow Arrows size:"
+msgstr "PageFlow Flechas tamaño:"
+
+#: functions.php:443
+msgid "PageFlow Arrows opacity:"
+msgstr "PageFlow Flechas opacidad:"
+
+#: functions.php:453
+msgid "Remote keys icons"
+msgstr "Iconos de teclas remotas"
+
+#: functions.php:499
+msgid "Components Settings"
+msgstr "Configuración de componentes"
+
+#: functions.php:499
+msgid "Modify Components styles Settings"
+msgstr "Modificar estilos de componentes Configuración"
+
+#: functions.php:505 functions.php:587
+msgid "Menu"
+msgstr "Menú"
+
+#: functions.php:505 functions.php:587
+msgid "Modify Global General Menu Settings"
+msgstr "Modificar la configuración global general del menú"
+
+#: functions.php:508 functions.php:590
+msgid "Menu Font Size in px"
+msgstr "Tamaño de fuente del menú en px"
+
+#: functions.php:511 functions.php:593
+msgid "Menu Line Height in px"
+msgstr "Altura de la línea de menú en px"
+
+#: functions.php:532 functions.php:614
+msgid "Menu padding in px"
+msgstr "El relleno del menú en px"
+
+#: functions.php:535 functions.php:617
+msgid "Menu border width in px"
+msgstr "Ancho del borde del menú en px"
+
+#: functions.php:538 functions.php:620
+msgid "Menu border radius in px"
+msgstr "Radio del borde del menú en px"
+
+#: functions.php:542 functions.php:624
+msgid "Menu border color"
+msgstr "Color del borde del menú"
+
+#: functions.php:547 functions.php:629
+msgid "Menu font color"
+msgstr "Color de la fuente del menú"
+
+#: functions.php:550 functions.php:632
+msgid "Menu background color"
+msgstr "Color de fondo del menú"
+
+#: functions.php:553 functions.php:635
+msgid "Menu item ACTIVE Font Size in px"
+msgstr "Elemento de menú ACTIVE Tamaño de fuente en px"
+
+#: functions.php:556 functions.php:638
+msgid "Menu item ACTIVE Line Height in px"
+msgstr "Elemento de menú ACTIVE Altura de línea en px"
+
+#: functions.php:577 functions.php:659
+msgid "Menu item ACTIVE Font Color"
+msgstr "Elemento de menú ACTIVE Color de fuente"
+
+#: functions.php:580 functions.php:662
+msgid "Menu item ACTIVE Line Background Color"
+msgstr "Elemento de menú ACTIVE Color de fondo de la línea"
+
+#: functions.php:666
+msgid "Side Menu"
+msgstr "Menú Lateral"
+
+#: functions.php:666
+msgid "Modify Global Menu settings"
+msgstr "Modificar los ajustes del menú global"
+
+#: functions.php:669
+msgid "Edit Background Color"
+msgstr "Editar color de fondo"
+
+#: functions.php:672 functions.php:769 functions.php:865
+msgid "Font Size in px"
+msgstr "Tamaño de fuente en px"
+
+#: functions.php:675
+msgid "Line Height in px"
+msgstr "Altura de línea en px"
+
+#: functions.php:678 functions.php:875
+msgid "Edit Font Color"
+msgstr "Editar color de fuente"
+
+#: functions.php:681
+msgid "Edit ACTIVE Font Color"
+msgstr "Editar color de fuente activo"
+
+#: functions.php:684
+msgid "Edit ACTIVE Line Background Color"
+msgstr "Editar el color de fondo de la línea activa"
+
+#: functions.php:687
+msgid "Edit Separator Color"
+msgstr "Editar el color del separador"
+
+#: functions.php:690
+msgid "Width in px"
+msgstr "Ancho en px"
+
+#: functions.php:693
+msgid "Launcher"
+msgstr "Lanzacohetes"
+
+#: functions.php:693
+msgid "Modify the Global Launcher Settings"
+msgstr "Modificar la configuración de Global Launcher"
+
+#: functions.php:696
+msgid "Launcher Font Size in px"
+msgstr "Tamaño de fuente del Lanzador en px"
+
+#: functions.php:699
+msgid "Launcher Line Height in px"
+msgstr "Línea de Lanzador en px"
+
+#: functions.php:729
+msgid "Edit Launcher Font Color"
+msgstr "Editar color de fuente del lanzador"
+
+#: functions.php:730
+msgid "Edit Launcher Background Font Color"
+msgstr "Editar el fondo de la fuente de lanzamiento"
+
+#: functions.php:731
+msgid "Edit Launcher Font Color - focused"
+msgstr "Editar color de la fuente del iniciador"
+
+#: functions.php:732
+msgid "Edit Launcher Background Font Color - focused"
+msgstr "Edit Launcher Background font color - focused"
+
+#: functions.php:733
+msgid "Edit Launcher Border Color - focused"
+msgstr "Editar borde del iniciador Color - enfocado"
+
+#: functions.php:736
+msgid "Video Player Settings"
+msgstr "Configuración del reproductor de video"
+
+#: functions.php:736
+msgid "Modify Global Video Player Settings"
+msgstr "Modificar la configuración del reproductor de video global"
+
+#: functions.php:754
+msgid "Player Control Height in px"
+msgstr "Altura del control del reproductor en px"
+
+#: functions.php:759
+msgid "Player Controls Background Color"
+msgstr "Controles del reproductor Color de fondo"
+
+#: functions.php:764
+msgid "Player Controls Highlight Color"
+msgstr "Controles del reproductor"
+
+#: functions.php:776
+msgid "Video loading animation"
+msgstr "Animación de carga de vídeo"
+
+#: functions.php:777
+msgid "Video play button"
+msgstr "Botón de reproducción de video"
+
+#: functions.php:778
+msgid "Video pause button"
+msgstr "Botón de pausa de vídeo"
+
+#: functions.php:779
+msgid "Video stop button"
+msgstr "Botón de parada de video"
+
+#: functions.php:780
+msgid "Video forward button"
+msgstr "Botón de avance de vídeo"
+
+#: functions.php:781
+msgid "Video rewind button"
+msgstr "Botón de rebobinado de vídeo"
+
+#: functions.php:782
+msgid "Video fullscreen button"
+msgstr "Botón de pantalla completa de vídeo"
+
+#: functions.php:783
+msgid "Video exit fullscreen button"
+msgstr "Botón de salida de vídeo de pantalla completa"
+
+#: functions.php:784
+msgid "Video arrow left button"
+msgstr "Video arrow Botón izquierdo"
+
+#: functions.php:785
+msgid "Video arrow right button"
+msgstr "Video flecha botón derecho"
+
+#: functions.php:786
+msgid "Video zoom in button"
+msgstr "Botón de zoom de vídeo"
+
+#: functions.php:787
+msgid "Video zoom out button"
+msgstr "Botón de reducción de zoom de vídeo"
+
+#: functions.php:808
+msgid "Gallery"
+msgstr "Galería"
+
+#: functions.php:808
+msgid "Modify Global Gallery Settings"
+msgstr "Modificar la configuración global de la galería"
+
+#: functions.php:811
+msgid "Gallery background color"
+msgstr "Color de fondo de la galería"
+
+#: functions.php:814
+msgid "Gallery arrow color"
+msgstr "Color de flecha de la galería"
+
+#: functions.php:817
+msgid "Gallery arrow background color"
+msgstr "Color de fondo de la flecha de la galería"
+
+#: functions.php:820
+msgid "Gallery arrow size in px"
+msgstr "Tamaño de flecha de la galería en px"
+
+#: functions.php:823
+msgid "Gallery arrow padding in px"
+msgstr "Galería de relleno de flecha en px"
+
+#: functions.php:826
+msgid "Gallery arrow border radius in px"
+msgstr "Galería arrow radio de la frontera en px"
+
+#: functions.php:829
+msgid "Gallery dots color"
+msgstr "Color de los puntos de la galería"
+
+#: functions.php:832
+msgid "Gallery dot focused color "
+msgstr "Color de punto de la galería"
+
+#: functions.php:843
+msgid "Audio Settings"
+msgstr "Configuraciones de audio"
+
+#: functions.php:844
+msgid "Modify Global Audio Settings soon"
+msgstr "Modificar los ajustes globales de audio pronto"
+
+#: functions.php:849
+msgid "Font Settings"
+msgstr "Configuración de fuente"
+
+#: functions.php:850 functions.php:857
+msgid "Modify Global Font Settings"
+msgstr "Modificar la configuración global de fuentes"
+
+#: functions.php:856
+msgid "Text"
+msgstr "Texto"
+
+#: functions.php:870
+msgid "Line height in px (usually 1.5 times the font size)"
+msgstr "Altura de línea en px (normalmente 1,5 veces el tamaño de fuente)"
+
+#: functions.php:881
+msgid "Headlines"
+msgstr "Titulares"
+
+#: functions.php:882
+msgid "Set Headline Settings for your App"
+msgstr "Establecer la configuración de título para tu aplicación"
+
+#: functions.php:928
+msgid "Links"
+msgstr ""
+
+#: functions.php:929
+msgid "Modify Global Link Settings"
+msgstr "Modificar configuración de vínculo global"
+
+#: functions.php:939
+msgid "Link Size in px"
+msgstr "Tamaño del enlace en px"
+
+#: functions.php:944
+msgid "Edit Link Color"
+msgstr "Editar color del enlace"
+
+#: functions.php:969
+msgid "Edit Link Color active"
+msgstr "Editar color de enlace activo"
+
+#: functions.php:979
+msgid "Social Feed Settings"
+msgstr "Configuración del feed social"
+
+#: functions.php:980
+msgid "Modify Global Social Feed Settings soon"
+msgstr "Modifique los ajustes globales de Social Feed en breve"
+
+#. Theme Name of the plugin/theme
+msgid "MPAT"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://mpat.eu/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This official MPAT theme for WordPress takes us a big step forward to the "
+"world of HbbTV. Together with the MPAT Core Plugin and its new range of mail "
+"formats, page layout and model, this is a complete editing solution."
+msgstr ""
+"Este tema oficial de MPAT para WordPress nos da un gran paso adelante al "
+"mundo de HbbTV. Junto con el MPAT Core Plugin y su nueva gama de formatos de "
+"correo, diseño de página y modelo, esta es una solución de edición completa."
+
+#. Author of the plugin/theme
+msgid "MPAT.eu"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr ""
+
+#~ msgid "HotSpot Settings"
+#~ msgstr "Configuración de HotSpot"
+
+#~ msgid "Modify Global HotSpot Settings soon"
+#~ msgstr "Modificar los ajustes globales de HotSpot pronto"
+
+#~ msgid "Application icons"
+#~ msgstr "Iconos de aplicación"
+
+#~ msgid "Set application icons"
+#~ msgstr "Establecer iconos de aplicación"
+
+#~ msgid "Side Menu Settings"
+#~ msgstr "Configuración del menú lateral"
+
+#~ msgid "Launcher Settings"
+#~ msgstr "Configuración del iniciador"
+
+#~ msgid "Gallery Settings"
+#~ msgstr "Configuración de la Galería"
+
+#~ msgid "Modify Global Gallery Settings soon"
+#~ msgstr "Modificar los ajustes de Galería global pronto"
+
+#~ msgid "General Menu Settings"
+#~ msgstr "Configuración general del menú"
+
+#~ msgid "Modify Global General Menu Settings soon"
+#~ msgstr "Modificar Ajustes de Menú General Global pronto"
+
+#~ msgid ""
+#~ "The 2013 theme for WordPress takes us back to the blog, featuring a full "
+#~ "range of post formats, each displayed beautifully in their own unique "
+#~ "way. Design details abound, starting with a vibrant color scheme and "
+#~ "matching header images, beautiful typography and icons, and a flexible "
+#~ "layout that looks great on any device, big or small."
+#~ msgstr ""
+#~ "Deze MPAT-thema voor WordPress brengt ons naar een HbbTV voorbereide "
+#~ "blog, met een compleet nieuw assortiment postformaten."

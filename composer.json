@@ -1,0 +1,17 @@
+{
+  "name": "mpat/mpat-theme",
+  "description": "MPAT theme",
+  "version": "1.0.7",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MPAT",
+      "email": "info@mpat.eu"
+    }
+  ],
+  "type": "wordpress-theme",
+  "require": {
+    "php": ">=5.5",
+    "composer/installers": "~1.0.12"
+  }
+}

@@ -1,0 +1,508 @@
+# Copyright (C) 2017 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MPAT 1.0.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mpat-theme\n"
+"POT-Creation-Date: 2017-10-03 11:12+0200\n"
+"PO-Revision-Date: 2017-10-03 11:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:7
+msgid "Page not found"
+msgstr "Sivua ei löydetty"
+
+#: functions.php:50
+msgid "Full Page"
+msgstr "Täysi sivu"
+
+#: functions.php:222 functions.php:233
+msgid "Frontpage"
+msgstr "Etusivu"
+
+#: functions.php:224
+msgid "Select the page to be displayed on the front"
+msgstr "Valitse etusivulle näkyvä sivu"
+
+#: functions.php:240
+msgid "General Settings"
+msgstr "Yleiset asetukset"
+
+#: functions.php:241
+msgid "Modify the theme settings"
+msgstr "Muokkaa teeman asetuksia"
+
+#: functions.php:247
+msgid "Application background"
+msgstr "Sovelluksen tausta"
+
+#: functions.php:248
+msgid "Modify the Default Background "
+msgstr "Muuta oletustulostusta "
+
+#: functions.php:266
+msgid "Backgroud color"
+msgstr "Taustaväri"
+
+#: functions.php:270
+msgid "Backgroud video"
+msgstr "Taustakuva"
+
+#: functions.php:274
+msgid "Background image (1280x720px)"
+msgstr "Taustakuva (1280x720px)"
+
+#: functions.php:283
+msgid "Focused Component Styles"
+msgstr "Keskitetyt komponenttityypit"
+
+#: functions.php:284
+msgid "Modify Global Focused Component Style Settings"
+msgstr "Muokkaa yleisesti kohdennettuja komponenttityyliasetuksia"
+
+#: functions.php:293 functions.php:298
+msgid "Border color"
+msgstr "Raja väri"
+
+#: functions.php:311
+msgid "Border width (in px, 1-50)"
+msgstr "Rajan leveys (px, 1-50)"
+
+#: functions.php:321
+msgid "Border radius (in px, 1-50)"
+msgstr "Rajan säde (px, 1-50)"
+
+#: functions.php:331
+msgid "Icon Set"
+msgstr "Kuvaketta"
+
+#: functions.php:332 functions.php:454
+msgid "Set Icon Color Theme for your App"
+msgstr "Aseta kuvakkeen väri-teema sovelluksestasi"
+
+#: functions.php:381
+msgid "Icons"
+msgstr "Kuvakkeet"
+
+#: functions.php:382
+msgid "Choose Icon Color"
+msgstr "Valitse kuvakkeen väri"
+
+#: functions.php:388
+msgid "Icon Color opacity:"
+msgstr "Kuvake Väritarkasiteetti:"
+
+#: functions.php:396
+msgid "Icons focused"
+msgstr "Kuvakkeet keskittyvät"
+
+#: functions.php:397
+msgid "Choose Icon Color focused"
+msgstr "Valitse Ikonin väri"
+
+#: functions.php:403
+msgid "Icon Color focused opacity:"
+msgstr "Ikoni Väri keskittynyt opasiteetti:"
+
+#: functions.php:411
+msgid "Icons active"
+msgstr "Kuvakkeet ovat aktiivisia"
+
+#: functions.php:412
+msgid "Choose Icon Color active"
+msgstr "Valitse Ikonin väri aktiivinen"
+
+#: functions.php:418
+msgid "Icon Color active opacity:"
+msgstr "Kuvake Väri aktiivinen peittävyys:"
+
+#: functions.php:426
+msgid "PageFlow Apps"
+msgstr "PageFlow -ohjelmat"
+
+#: functions.php:427
+msgid "Choose PageFlow Arrow Color"
+msgstr "Valitse PageFlow-nuoliväri"
+
+#: functions.php:433
+msgid "PageFlow Arrows size:"
+msgstr "PageFlow Nuolet:"
+
+#: functions.php:443
+msgid "PageFlow Arrows opacity:"
+msgstr "PageFlow Arrows opasiteetti:"
+
+#: functions.php:453
+msgid "Remote keys icons"
+msgstr "Etäavaimet kuvakkeet"
+
+#: functions.php:499
+msgid "Components Settings"
+msgstr "Komponenttien asetukset"
+
+#: functions.php:499
+msgid "Modify Components styles Settings"
+msgstr "Muokkaa osioiden tyylit Asetukset"
+
+#: functions.php:505 functions.php:587
+msgid "Menu"
+msgstr ""
+
+#: functions.php:505 functions.php:587
+msgid "Modify Global General Menu Settings"
+msgstr ""
+
+#: functions.php:508 functions.php:590
+msgid "Menu Font Size in px"
+msgstr ""
+
+#: functions.php:511 functions.php:593
+msgid "Menu Line Height in px"
+msgstr ""
+
+#: functions.php:532 functions.php:614
+msgid "Menu padding in px"
+msgstr ""
+
+#: functions.php:535 functions.php:617
+msgid "Menu border width in px"
+msgstr ""
+
+#: functions.php:538 functions.php:620
+msgid "Menu border radius in px"
+msgstr ""
+
+#: functions.php:542 functions.php:624
+msgid "Menu border color"
+msgstr ""
+
+#: functions.php:547 functions.php:629
+msgid "Menu font color"
+msgstr ""
+
+#: functions.php:550 functions.php:632
+msgid "Menu background color"
+msgstr ""
+
+#: functions.php:553 functions.php:635
+msgid "Menu item ACTIVE Font Size in px"
+msgstr ""
+
+#: functions.php:556 functions.php:638
+msgid "Menu item ACTIVE Line Height in px"
+msgstr ""
+
+#: functions.php:577 functions.php:659
+msgid "Menu item ACTIVE Font Color"
+msgstr ""
+
+#: functions.php:580 functions.php:662
+msgid "Menu item ACTIVE Line Background Color"
+msgstr ""
+
+#: functions.php:666
+msgid "Side Menu"
+msgstr ""
+
+#: functions.php:666
+msgid "Modify Global Menu settings"
+msgstr "Muokkaa yleisiä valikkoasetuksia"
+
+#: functions.php:669
+msgid "Edit Background Color"
+msgstr "Muokkaa taustaväriä"
+
+#: functions.php:672 functions.php:769 functions.php:865
+msgid "Font Size in px"
+msgstr "Fontin koko px"
+
+#: functions.php:675
+msgid "Line Height in px"
+msgstr "Rivi pituus px"
+
+#: functions.php:678 functions.php:875
+msgid "Edit Font Color"
+msgstr "Muokkaa fontin väriä"
+
+#: functions.php:681
+msgid "Edit ACTIVE Font Color"
+msgstr "Muokkaa aktiivisen fontin väriä"
+
+#: functions.php:684
+msgid "Edit ACTIVE Line Background Color"
+msgstr "Muokkaa aktiivisen linjan taustaväriä"
+
+#: functions.php:687
+msgid "Edit Separator Color"
+msgstr "Muokkaa erottimen väriä"
+
+#: functions.php:690
+msgid "Width in px"
+msgstr "Leveys px: ssa"
+
+#: functions.php:693
+msgid "Launcher"
+msgstr ""
+
+#: functions.php:693
+msgid "Modify the Global Launcher Settings"
+msgstr "Muokkaa Global Launcher-asetuksia"
+
+#: functions.php:696
+msgid "Launcher Font Size in px"
+msgstr "Käynnistyksen fonttikoko px"
+
+#: functions.php:699
+msgid "Launcher Line Height in px"
+msgstr "Käynnistyslinjan pituus px: ssa"
+
+#: functions.php:729
+msgid "Edit Launcher Font Color"
+msgstr "Muokkaa Launcher-fontin väriä"
+
+#: functions.php:730
+msgid "Edit Launcher Background Font Color"
+msgstr "Muokkaa laukaisimen taustaväriä"
+
+#: functions.php:731
+msgid "Edit Launcher Font Color - focused"
+msgstr "Muokkaa Launcher - fonttia Väri - keskittynyt"
+
+#: functions.php:732
+msgid "Edit Launcher Background Font Color - focused"
+msgstr "Muokkaa laukaisimen taustaväriä Väri keskittyy"
+
+#: functions.php:733
+msgid "Edit Launcher Border Color - focused"
+msgstr ""
+
+#: functions.php:736
+msgid "Video Player Settings"
+msgstr "Video Player -asetukset"
+
+#: functions.php:736
+msgid "Modify Global Video Player Settings"
+msgstr "Muokkaa Global Video Player -asetuksia"
+
+#: functions.php:754
+msgid "Player Control Height in px"
+msgstr "Pelaajien hallinnan korkeus px: ssa"
+
+#: functions.php:759
+msgid "Player Controls Background Color"
+msgstr "Playerin ohjaimet taustaväri"
+
+#: functions.php:764
+msgid "Player Controls Highlight Color"
+msgstr "Playerin ohjaimet Korosta väri"
+
+#: functions.php:776
+msgid "Video loading animation"
+msgstr "Video lataus animaatio"
+
+#: functions.php:777
+msgid "Video play button"
+msgstr ""
+
+#: functions.php:778
+msgid "Video pause button"
+msgstr ""
+
+#: functions.php:779
+msgid "Video stop button"
+msgstr ""
+
+#: functions.php:780
+msgid "Video forward button"
+msgstr ""
+
+#: functions.php:781
+msgid "Video rewind button"
+msgstr ""
+
+#: functions.php:782
+msgid "Video fullscreen button"
+msgstr ""
+
+#: functions.php:783
+msgid "Video exit fullscreen button"
+msgstr ""
+
+#: functions.php:784
+msgid "Video arrow left button"
+msgstr ""
+
+#: functions.php:785
+msgid "Video arrow right button"
+msgstr ""
+
+#: functions.php:786
+msgid "Video zoom in button"
+msgstr ""
+
+#: functions.php:787
+msgid "Video zoom out button"
+msgstr ""
+
+#: functions.php:808
+msgid "Gallery"
+msgstr ""
+
+#: functions.php:808
+msgid "Modify Global Gallery Settings"
+msgstr ""
+
+#: functions.php:811
+msgid "Gallery background color"
+msgstr ""
+
+#: functions.php:814
+msgid "Gallery arrow color"
+msgstr ""
+
+#: functions.php:817
+msgid "Gallery arrow background color"
+msgstr ""
+
+#: functions.php:820
+msgid "Gallery arrow size in px"
+msgstr ""
+
+#: functions.php:823
+msgid "Gallery arrow padding in px"
+msgstr ""
+
+#: functions.php:826
+msgid "Gallery arrow border radius in px"
+msgstr ""
+
+#: functions.php:829
+msgid "Gallery dots color"
+msgstr ""
+
+#: functions.php:832
+msgid "Gallery dot focused color "
+msgstr ""
+
+#: functions.php:843
+msgid "Audio Settings"
+msgstr "Ääniasetukset"
+
+#: functions.php:844
+msgid "Modify Global Audio Settings soon"
+msgstr "Muokkaa maailmanlaajuisia ääniasetuksia pian"
+
+#: functions.php:849
+msgid "Font Settings"
+msgstr "Fonttiasetukset"
+
+#: functions.php:850 functions.php:857
+msgid "Modify Global Font Settings"
+msgstr "Muokkaa yleisiä fonttiasetuksia"
+
+#: functions.php:856
+msgid "Text"
+msgstr "Teksti"
+
+#: functions.php:870
+msgid "Line height in px (usually 1.5 times the font size)"
+msgstr "Viivan korkeus kuvapisteessä (yleensä 1,5 kertaa fontin koko)"
+
+#: functions.php:881
+msgid "Headlines"
+msgstr "Pääotsikot"
+
+#: functions.php:882
+msgid "Set Headline Settings for your App"
+msgstr "Aseta otsikon asetukset sovelluksestasi"
+
+#: functions.php:928
+msgid "Links"
+msgstr "Linkit"
+
+#: functions.php:929
+msgid "Modify Global Link Settings"
+msgstr "Muokkaa Global Link -asetuksia"
+
+#: functions.php:939
+msgid "Link Size in px"
+msgstr "Linkin koko px"
+
+#: functions.php:944
+msgid "Edit Link Color"
+msgstr "Muokkaa linkin väriä"
+
+#: functions.php:969
+msgid "Edit Link Color active"
+msgstr "Muokkaa linkin väriä aktiivisena"
+
+#: functions.php:979
+msgid "Social Feed Settings"
+msgstr "Sosiaalisten syötteiden asetukset"
+
+#: functions.php:980
+msgid "Modify Global Social Feed Settings soon"
+msgstr "Muokkaa globaaleja sosiaalisen syötteen asetuksia pian"
+
+#. Theme Name of the plugin/theme
+msgid "MPAT"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://mpat.eu/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This official MPAT theme for WordPress takes us a big step forward to the "
+"world of HbbTV. Together with the MPAT Core Plugin and its new range of mail "
+"formats, page layout and model, this is a complete editing solution."
+msgstr ""
+"Tämä virallinen MPAT teema WordPressille tekee meille suuren askeleen HbbTV: "
+"n maailmalle. Yhdessä MPAT-ydinlaajennuksen ja sen uuden postimuotosarjojen, "
+"sivun asettelun ja mallin kanssa tämä on täydellinen muokkausratkaisu."
+
+#. Author of the plugin/theme
+msgid "MPAT.eu"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr ""
+
+#~ msgid "HotSpot Settings"
+#~ msgstr "HotSpot-asetukset"
+
+#~ msgid "Modify Global HotSpot Settings soon"
+#~ msgstr "Muokkaa Global HotSpot -asetuksia pian"
+
+#~ msgid "Application icons"
+#~ msgstr "Sovelluskuvakkeet"
+
+#~ msgid "Set application icons"
+#~ msgstr "Aseta sovelluskuvakkeet"
+
+#~ msgid "Side Menu Settings"
+#~ msgstr "Sivuvalikon asetukset"
+
+#~ msgid "Launcher Settings"
+#~ msgstr "Launcher-asetukset"
+
+#~ msgid "Gallery Settings"
+#~ msgstr "Galleria-asetukset"
+
+#~ msgid "Modify Global Gallery Settings soon"
+#~ msgstr "Muokkaa Global Gallery Settingsin pian"
+
+#~ msgid "General Menu Settings"
+#~ msgstr "Yleiset valikkoasetukset"
+
+#~ msgid "Modify Global General Menu Settings soon"
+#~ msgstr "Yleisten yleisten asetusten muuttaminen pian"
