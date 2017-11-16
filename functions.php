@@ -21,7 +21,8 @@
  * Miggi Zwicklbauer (miggi.zwicklbauer@fokus.fraunhofer.de)
  * Thomas Tröllmich  (thomas.troellmich@fokus.fraunhofer.de)
  * Jean-Philippe Ruijs (jean-philippe.ruijs@telecom.paristech.fr)
- *
+ * Stefano Miccoli (stefano.miccoli@finconsgroup.com)
+ * Marco Ferrari (marco.ferrari@finconsgroup.com)
  **/
 /* Required external files */
 
