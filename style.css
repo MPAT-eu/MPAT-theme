@@ -355,6 +355,17 @@ Text Domain: mpat
     background-repeat: no-repeat;
     background-position: center;
 }
+.link-background p{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.link-background-focused-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 /* ICONS */
 .hotspot svg, .page-element-content svg{

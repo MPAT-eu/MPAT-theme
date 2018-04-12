@@ -143,6 +143,7 @@ function mpat_add_customizer_custom_controls($wp_customize)
             $id = 'customize-control-' . str_replace('[', '-', str_replace(']', '', $this->id));
             $class = 'customize-control customize-control-' . $this->type; ?>
             <li id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($class); ?>">
+                <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
                 <?php $this->render_content(); ?>
             </li>
         <?php                                                                                                                                                                                                                 }
@@ -151,7 +152,6 @@ function mpat_add_customizer_custom_controls($wp_customize)
         {
     ?>
             <label>
-                <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
                 <input type="text" data-palette="<?php echo $this->palette; ?>"
                        data-default-color="<?php echo $this->default; ?>"
                        value="<?php echo intval($this->value()); ?>"
@@ -186,7 +186,9 @@ define('MPAT_DEFAULT_FONT_COLOR', '#666');
 
 define('MPAT_DEFAULT_LINK_SIZE', 20);
 define('MPAT_DEFAULT_LINK_COLOR', '#000');
-define('MPAT_DEFAULT_LINK_ACTIVE_COLOR', '#fff');
+define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR', 'rgba(0,0,0, 0.0)');
+define('MPAT_DEFAULT_LINK_COLOR_FOCUSED', '#000');
+define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED', 'rgba(0,0,0, 0.0)');
 define('MPAT_DEFAULT_LINK_WEIGHT', 'normal');
 define('MPAT_DEFAULT_LINK_DECORATION', 'none');
 
@@ -198,7 +200,6 @@ define('MPAT_DEFAULT_SIDE_MENU_WIDTH', 300);
 define('MPAT_DEFAULT_SIDE_MENU_SEPARATOR_COLOR', '#FFF');
 define('MPAT_DEFAULT_SIDE_MENU_BG_COLOR', 'rgba(0,0,0, 0.5)');
 define('MPAT_DEFAULT_SIDE_MENU_LINE_BG_COLOR_ACTIVE', 'rgba(0,0,0, 0.0)');
-
 
 define('MPAT_DEFAULT_LAUNCHER_FONT_SIZE', 20);
 define('MPAT_DEFAULT_LAUNCHER_LINE_HEIGHT', 30);
@@ -854,7 +855,68 @@ function mpat_customizer_register( $wp_customize )
 	
 	$wp_customize->add_setting( 'mpat_gallery_dot_color_focused', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_GALLERY_DOT_COLOR_FOCUSED));
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mpat_gallery_dot_color_focused', array('label' => __( 'Gallery dot focused color ', 'mpat' ),'section' => 'mpat_gallery') ) );
-	
+
+
+  /*********** Link **********/
+  $wp_customize->add_section( 'mpat_links', array(
+    'title' => __( 'Links', 'mpat'),
+    'description' => __( 'Modify Global Link Settings', 'mpat' ),
+    'panel' => 'mpat_components',
+    ) );
+    $wp_customize->add_setting('link_size', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_SIZE));
+    $wp_customize->add_setting('link_color', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_COLOR));
+    $wp_customize->add_setting('link_background_color', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_BACKGROUND_COLOR));
+    $wp_customize->add_setting('link_style', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_WEIGHT));
+    $wp_customize->add_setting('link_decoration', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_DECORATION));
+    $wp_customize->add_setting('link_color_focused', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_COLOR_FOCUSED));
+    $wp_customize->add_setting('link_background_color_focused', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED));
+    
+    $wp_customize->add_control( 'link_size', array(
+            'label' => __( 'Link Size in px' , 'mpat'),
+            'section' => 'mpat_links',
+            'type' => 'number',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
+            'label' => __( 'Edit Link Color', 'mpat' ),
+            'section' => 'mpat_links',
+    ) ) );
+    $wp_customize->add_control( new MPAT_Customize_Alpha_Color_Control( $wp_customize, 'link_background_color', array(
+            'label' => __( 'Edit Link Background Color', 'mpat' ),
+            'palette' => true,
+            'section' => 'mpat_links',
+    ) ) );
+    $wp_customize->add_control('link_style', array(
+            'type' => 'select',
+            'label' => 'Choose a Style for Links:',
+            'section' => 'mpat_links',
+            'choices' => array(
+                    'bolder' => 'Bolder',
+                    'bold' => 'Bold',
+                    'normal' => 'Normal',
+                    'lighter' => 'Lighter',
+            ),
+    ) );
+    $wp_customize->add_control('link_decoration', array(
+            'type' => 'select',
+            'label' => 'Choose a Style for link decoration:',
+            'section' => 'mpat_links',
+            'choices' => array(
+                    "none" => "None",
+                    "underline" => "Underline",
+                    "overline" => "Overline",
+                    "line-through" => "Line-through",
+            )
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color_focused', array(
+            'label' => __( 'Edit Link Color - focused', 'mpat' ),
+            'section' => 'mpat_links',
+    ) ) );
+    $wp_customize->add_control( new MPAT_Customize_Alpha_Color_Control( $wp_customize, 'link_background_color_focused', array(
+            'label' => __( 'Edit Link Color - focused', 'mpat' ),
+            'palette' => true,
+            'section' => 'mpat_links',
+    ) ) );
+
 	/***************************************************************/
 	/**					End	Components Settings	Panel		      **/
 	/***************************************************************/
@@ -945,56 +1007,6 @@ function mpat_customizer_register( $wp_customize )
                 'section' => 'mpat_headline'
         ) ) );
     }
-    
-    
-    /*********** Link **********/
-    $wp_customize->add_section( 'mpat_links', array(
-    'title' => __( 'Links', 'mpat'),
-    'description' => __( 'Modify Global Link Settings', 'mpat' ),
-    'panel' => 'mpat_font',
-    ) );
-    $wp_customize->add_setting('link_size', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_SIZE));
-    $wp_customize->add_setting('link_color', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_COLOR));
-    $wp_customize->add_setting('link_style', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_WEIGHT));
-    $wp_customize->add_setting('link_decoration', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_DECORATION));
-    $wp_customize->add_setting('link_active_color', array('type' => 'theme_mod', 'default' => MPAT_DEFAULT_LINK_ACTIVE_COLOR));
-    
-    $wp_customize->add_control( 'link_size', array(
-            'label' => __( 'Link Size in px' , 'mpat'),
-            'section' => 'mpat_links',
-            'type' => 'number',
-    ) );
-    $wp_customize->add_control( new MPAT_Customize_Alpha_Color_Control( $wp_customize, 'link_color', array(
-            'label' => __( 'Edit Link Color', 'mpat' ),
-            'palette' => true,
-            'section' => 'mpat_links',
-    ) ) );
-    $wp_customize->add_control('link_style', array(
-            'type' => 'select',
-            'label' => 'Choose a Style for Links:',
-            'section' => 'mpat_links',
-            'choices' => array(
-                    'bolder' => 'Bolder',
-                    'bold' => 'Bold',
-                    'normal' => 'Normal',
-                    'lighter' => 'Lighter',
-            ),
-    ) );
-    $wp_customize->add_control('link_decoration', array(
-            'type' => 'select',
-            'label' => 'Choose a Style for link decoration:',
-            'section' => 'mpat_links',
-            'choices' => array(
-                    "none" => "None",
-                    "underline" => "Underline",
-            )
-    ) );
-    $wp_customize->add_control( new MPAT_Customize_Alpha_Color_Control( $wp_customize, 'link_active_color', array(
-            'label' => __( 'Edit Link Color active', 'mpat' ),
-            'palette' => true,
-            'section' => 'mpat_links',
-    ) ) );
-
 
     /*********** Social Feed **********/
 
@@ -1067,12 +1079,6 @@ function mpat_customizer_css()
             color: <?php echo get_theme_mod( 'font_color', MPAT_DEFAULT_FONT_COLOR); ?>;
             font-size: <?php echo get_theme_mod( 'font_size', MPAT_DEFAULT_FONT_SIZE ); ?>px;
             line-height: <?php echo get_theme_mod( 'line_height', MPAT_DEFAULT_LINE_HEIGHT ); ?>px;
-        }
-
-        a {
-            color: <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?>;
-            text-decoration: <?php echo get_theme_mod( 'link_decoration', MPAT_DEFAULT_LINK_DECORATION); ?>;
-            font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
         }
 
         h1, h2, h3, h4, h5, h6{
@@ -1171,16 +1177,20 @@ function mpat_customizer_css()
             height: <?php echo get_option( 'icon_arrow_width' );?>px;
       }
 
-        <?php // !important denotes that we don't have full control on styles, TODO remove it asap ?>
-      .link-background p{
-         color:  <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?> !important;
-         font-size: <?php echo get_theme_mod( 'link_size', MPAT_DEFAULT_LINK_SIZE); ?>px !important;
-         font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
+      .link-background{
+          background-color: <?php echo get_theme_mod( 'link_background_color', MPAT_DEFAULT_LINK_BACKGROUND_COLOR); ?>;
       }
-
-        <?php // TODO find why we use link styles for paragraphs... with important... ?> 
-      .focused .link-background p{
-         color:  <?php echo get_option( 'link_active_color', MPAT_DEFAULT_LINK_ACTIVE_COLOR); ?> !important;
+      .link-background p{
+          color: <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?>;
+          font-size: <?php echo get_theme_mod( 'link_size', MPAT_DEFAULT_LINK_SIZE); ?>px;
+          font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
+          text-decoration: <?php echo get_theme_mod( 'link_decoration', MPAT_DEFAULT_LINK_DECORATION); ?>;
+      }
+      .link-background-focused{
+          background-color: <?php echo get_theme_mod( 'link_background_color_focused', MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED); ?>;
+      }
+      .link-background-focused p{
+          color: <?php echo get_option( 'link_color_focused', MPAT_DEFAULT_LINK_COLOR_FOCUSED); ?>;
       }
 
       .side-menu{
@@ -1268,8 +1278,10 @@ function mpat_editor_style()
         // Need to find better name (and better styles assignment, namely inherit...extends ?>
        .imagecontent-preview p {
             color:  <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?>;
+            background-color: <?php echo get_theme_mod( 'link_background_color', MPAT_DEFAULT_LINK_BACKGROUND_COLOR); ?>;
             font-size: <?php echo get_theme_mod( 'link_size', MPAT_DEFAULT_LINK_SIZE); ?>px ;
             font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
+            text-decoration: <?php echo get_theme_mod( 'link_decoration', MPAT_DEFAULT_LINK_DECORATION); ?>;
         }
   }
   </style><?php
