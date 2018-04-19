@@ -1190,7 +1190,7 @@ function mpat_customizer_css()
           background-color: <?php echo get_theme_mod( 'link_background_color_focused', MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED); ?>;
       }
       .link-background-focused p{
-          color: <?php echo get_option( 'link_color_focused', MPAT_DEFAULT_LINK_COLOR_FOCUSED); ?>;
+          color: <?php echo get_theme_mod( 'link_color_focused', MPAT_DEFAULT_LINK_COLOR_FOCUSED); ?>;
       }
 
       .side-menu{
