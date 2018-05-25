@@ -940,3 +940,11 @@ Text Domain: mpat
 .hotspot_icon_video {
   background-image: url(./frontend/assets/hotspot_icon_video_white.png);
 }
+
+.MPATScrolledTextScrollBar {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
