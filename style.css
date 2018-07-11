@@ -949,6 +949,10 @@ Text Domain: mpat
   border-radius: 5px;
 }
 
+.MPATScrolledTextWithScrollBar {
+  padding-right: 15px;
+}
+
 .MPATShowOnRedTextStyle {
     color: white;
     font-family: sans-serif;
