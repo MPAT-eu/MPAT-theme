@@ -114,7 +114,7 @@ function the_page() {
                 div.style.bottom = exports.bottomIn + "px";
                 i = 0;
             }
-            setTimeout(function() {exports.fade(div, i + 1)}, 100);
+            setTimeout(function() {exports.fade(div, i + 1)}, 1000/exports.resolution);
         };
         exports.start = function () {
             TVDebugServerInterface.log("start red button fader");
