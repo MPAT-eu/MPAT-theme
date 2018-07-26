@@ -93,6 +93,13 @@ function the_page() {
     var RedButtonFader = (function () {
         "use strict";
         var exports = {}, progress;
+        // the Page class in the front end reads this RedButtonMode
+        // which can take as values:
+        // all : all pages can be hidden by the red button
+        // some : only pages with hideOnRed can be hidden by the red button (set in Page Editor)
+        // none : global of the red button feature (overrides page settings)
+        exports.RedButtonMode = 'all';
+        exports.defaultText = 'Press RED button to show again';
         exports.resolution = 10; // 10 updates per second
         exports.durationOnScreen = 10 * exports.resolution; // 10s on screen
         exports.totalDuration = 300 * exports.resolution; // 5m total period
