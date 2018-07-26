@@ -970,6 +970,7 @@ Text Domain: mpat
     right: 0;
     animation-name: tensperfivemn;
     animation-duration: 300s;
+    animation-iteration-count: infinite;
 }
 
 .MPATShowOnRedIcon {
