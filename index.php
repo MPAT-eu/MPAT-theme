@@ -65,6 +65,38 @@ function the_page(){
     <div id="vidcontainer"></div>
     <div id="main"></div>
     <script type="text/javascript">
+      var RedButtonFader = (function () {
+          "use strict";
+          var exports = {};
+          exports.resolution = 10;
+          exports.durationOnScreen = 10 * exports.resolution;
+          exports.totalDuration = 30 * exports.resolution;
+          exports.animationDuration = 10 ;
+          exports.bottomIn = 0;
+          exports.bottomOut = -50;
+          exports.fade = function fade(div, i) {
+              if (i === 0) console.log("red button fader started")
+              if (i < exports.durationOnScreen) {
+                  div.style.bottom = exports.bottomIn+"px";
+              } else if (i < (exports.durationOnScreen + exports.animationDuration)) {
+                  var progress = (i-exports.durationOnScreen)/exports.animationDuration;
+                  div.style.bottom = (exports.bottomOut * progress - exports.bottomIn * (1-progress))+"px";
+              } else if (i > exports.totalDuration) {
+                  div.style.bottom = exports.bottomIn+"px";
+                  i = 0;
+              } else if (i > (exports.totalDuration - exports.animationDuration)) {
+                  var progress = -(i - exports.totalDuration)/exports.animationDuration;
+                  div.style.bottom = (exports.bottomOut * progress - exports.bottomIn * (1-progress))+"px";
+              } else {
+                  div.style.bottom = exports.bottomOut+"px";
+              }
+              setTimeout(() => fade(div, i+1), 100);
+          };
+          exports.start = function start() {
+              exports.fade(document.getElementById("MPATRedButtonDiv"), 0);
+          };
+          return exports;
+      })();
       var TVDebugServerInterface = (function () {
         "use strict";
         var serverUrl = location.protocol + '//' + location.hostname + ':' + 3000;
