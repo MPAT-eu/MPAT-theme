@@ -65,75 +65,8 @@ function the_page() {
 </div>
 <div id="vidcontainer"></div>
 <div id="main"></div>
-<script type="text/javascript">
-    var TVDebugServerInterface = (function () {
-        "use strict";
-        var serverUrl = location.protocol + '//' + location.hostname + ':' + 3000;
-        var exports = {};
-
-        exports.log = function (message) {
-            if (location.hash === "#tvdebug") {
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", serverUrl + "/log?message=" + encodeURIComponent(message));
-                xhr.send();
-            }
-        };
-
-        return exports;
-    })();
-    TVDebugServerInterface.log(">>>>>>>>>>>>>>>>>> loading " + window.location.href);
-    if (hbbtvlib_initialize() || (!!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0)) {
-        TVDebugServerInterface.log("after HbbTV initialisation");
-        setTimeout(function () {
-            hbbtvlib_show();
-            TVDebugServerInterface.log("after HbbTV show");
-        }, 10);
-    }
-    TVDebugServerInterface.log("before RedButtonFader");
-    var RedButtonFader = (function () {
-        "use strict";
-        var exports = {}, progress;
-        // the Page class in the front end reads this RedButtonMode
-        // which can take as values:
-        // all : all pages can be hidden by the red button
-        // some : only pages with hideOnRed can be hidden by the red button (set in Page Editor)
-        // none : global of the red button feature (overrides page settings)
-        exports.RedButtonMode = 'all';
-        exports.defaultText = 'Press RED button to show again';
-        exports.resolution = 10; // 10 updates per second
-        exports.durationOnScreen = 10 * exports.resolution; // 10s on screen
-        exports.totalDuration = 300 * exports.resolution; // 5m total period
-        exports.animationDuration = 2 * exports.resolution; // animation 2s
-        exports.bottomIn = 0; // value of bottom when in
-        exports.bottomOut = -30; // value of bottom when out
-        exports.fade = function (div, i) {
-            if (exports.durationOnScreen > i) {
-                div.style.bottom = exports.bottomIn + "px";
-            } else if ((exports.durationOnScreen + exports.animationDuration) > i) {
-                progress = (i - exports.durationOnScreen) / exports.animationDuration;
-                div.style.bottom = (exports.bottomOut * progress - exports.bottomIn * (1 - progress)) + "px";
-            } else if ((exports.totalDuration - exports.animationDuration) > i) {
-                div.style.bottom = exports.bottomOut + "px";
-            } else if (exports.totalDuration > i) {
-                progress = -(i - exports.totalDuration) / exports.animationDuration;
-                div.style.bottom = (exports.bottomOut * progress - exports.bottomIn * (1 - progress)) + "px";
-            } else {
-                div.style.bottom = exports.bottomIn + "px";
-                i = 0;
-            }
-            setTimeout(function() {exports.fade(div, i + 1)}, 1000/exports.resolution);
-        };
-        exports.start = function () {
-            TVDebugServerInterface.log("start red button fader");
-            exports.fade(document.getElementById("MPATRedButtonDiv"), 0);
-        };
-        return exports;
-    })();
-    TVDebugServerInterface.log("after RedButtonFader");
-</script>
 <?php wp_footer(); ?>
 <script type="text/javascript">
-    TVDebugServerInterface.log("after phpFooter");
     if (location.hash === '#preview') {
         var console = document.getElementById('console');
         if (console) console.style.display = 'none';

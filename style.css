@@ -962,10 +962,18 @@ Text Domain: mpat
     right: 0;
 }
 
-.MPATShowOnRedIcon {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    display: inline-block;
-    margin-left: 5px;
+.MPATShowOnRedIconRight {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.MPATShowOnRedIconLeft {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 5px;
 }
