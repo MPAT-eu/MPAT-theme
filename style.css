@@ -107,18 +107,18 @@ Text Domain: mpat
     height: 100px;
 }
 
-.page_arrow_down, .page_arrow_up{
-    left: 590px;
-}
-
 .page_arrow_right{
-    right: 75px;
+    right: 0px;
     top: 310px;
 }
 
 .page_arrow_left {
     left: 0px;
     top: 310px;
+}
+
+.page_arrow_down, .page_arrow_up{
+    left: 590px;
 }
 
 .page_arrow_down{
