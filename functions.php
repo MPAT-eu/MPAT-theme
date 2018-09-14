@@ -186,9 +186,9 @@ define('MPAT_DEFAULT_FONT_COLOR', '#666');
 
 define('MPAT_DEFAULT_LINK_SIZE', 20);
 define('MPAT_DEFAULT_LINK_COLOR', '#000');
-define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR', 'rgba(0,0,0, 0.0)');
+define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR', 'rgba(0,0,0, 0.8)');
 define('MPAT_DEFAULT_LINK_COLOR_FOCUSED', '#000');
-define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED', 'rgba(0,0,0, 0.0)');
+define('MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED', 'rgba(0,0,0, 0.8)');
 define('MPAT_DEFAULT_LINK_WEIGHT', 'normal');
 define('MPAT_DEFAULT_LINK_DECORATION', 'none');
 
@@ -199,7 +199,7 @@ define('MPAT_DEFAULT_SIDE_MENU_FONT_COLOR_ACTIVE', '#888');
 define('MPAT_DEFAULT_SIDE_MENU_WIDTH', 300);
 define('MPAT_DEFAULT_SIDE_MENU_SEPARATOR_COLOR', '#FFF');
 define('MPAT_DEFAULT_SIDE_MENU_BG_COLOR', 'rgba(0,0,0, 0.5)');
-define('MPAT_DEFAULT_SIDE_MENU_LINE_BG_COLOR_ACTIVE', 'rgba(0,0,0, 0.0)');
+define('MPAT_DEFAULT_SIDE_MENU_LINE_BG_COLOR_ACTIVE', 'rgba(0,0,0, 0.8)');
 
 define('MPAT_DEFAULT_LAUNCHER_FONT_SIZE', 20);
 define('MPAT_DEFAULT_LAUNCHER_LINE_HEIGHT', 30);
@@ -218,12 +218,12 @@ define('MPAT_DEFAULT_GENERAL_MENU_TEXT_WEIGHT', '400');
 define('MPAT_DEFAULT_GENERAL_MENU_BORDER_WIDTH', 0);
 define('MPAT_DEFAULT_GENERAL_MENU_BORDER_RADIUS', 0);
 define('MPAT_DEFAULT_GENERAL_MENU_BORDER_COLOR', '#fff');
-define('MPAT_DEFAULT_GENERAL_MENU_BACKGROUND_COLOR', 'rgba(255,255,255,0)');
+define('MPAT_DEFAULT_GENERAL_MENU_BACKGROUND_COLOR', 'rgba(255,255,255,0.8)');
 define('MPAT_DEFAULT_GENERAL_MENU_PADDING', 0);
 define('MPAT_DEFAULT_GENERAL_MENU_FONT_SIZE_ACTIVE', 16);
 define('MPAT_DEFAULT_GENERAL_MENU_TEXT_WEIGHT_ACTIVE', '400');
 define('MPAT_DEFAULT_GENERAL_MENU_FONT_COLOR_ACTIVE', '#666');
-define('MPAT_DEFAULT_GENERAL_MENU_BACKGROUND_COLOR_ACTIVE', 'rgba(255,255,255,0)');
+define('MPAT_DEFAULT_GENERAL_MENU_BACKGROUND_COLOR_ACTIVE', 'rgba(255,255,255,0.8)');
 define('MPAT_DEFAULT_GENERAL_MENU_LINE_HEIGHT_ACTIVE', 20);
 
 define('MPAT_DEFAULT_GALLERY_BACKGROUND_COLOR', 'rgba(255,255,255,0)');
@@ -1185,56 +1185,63 @@ function mpat_customizer_css()
         height: <?php echo get_option( 'icon_arrow_width' );?>px;
     }
 
-      .link-background{
-          background-color: <?php echo get_theme_mod( 'link_background_color', MPAT_DEFAULT_LINK_BACKGROUND_COLOR); ?>;
-      }
-      .link-background p{
-          color: <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?>;
-          font-size: <?php echo get_theme_mod( 'link_size', MPAT_DEFAULT_LINK_SIZE); ?>px;
-          font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
-          text-decoration: <?php echo get_theme_mod( 'link_decoration', MPAT_DEFAULT_LINK_DECORATION); ?>;
-      }
-      .link-background-focused{
-          background-color: <?php echo get_theme_mod( 'link_background_color_focused', MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED); ?>;
-      }
-      .link-background-focused p{
-          color: <?php echo get_theme_mod( 'link_color_focused', MPAT_DEFAULT_LINK_COLOR_FOCUSED); ?>;
-      }
+    .link-background{
+        background-color: <?php echo get_theme_mod( 'link_background_color', MPAT_DEFAULT_LINK_BACKGROUND_COLOR); ?>;
+    }
 
-      .side-menu{
+    .link-background p{
+        color: <?php echo get_theme_mod( 'link_color', MPAT_DEFAULT_LINK_COLOR); ?>;
+        font-size: <?php echo get_theme_mod( 'link_size', MPAT_DEFAULT_LINK_SIZE); ?>px;
+        font-weight: <?php echo get_theme_mod( 'link_style', MPAT_DEFAULT_LINK_WEIGHT); ?>;
+        text-decoration: <?php echo get_theme_mod( 'link_decoration', MPAT_DEFAULT_LINK_DECORATION); ?>;
+    }
+
+    .link-background-focused {
+        background-color: <?php echo get_theme_mod( 'link_background_color_focused', MPAT_DEFAULT_LINK_BACKGROUND_COLOR_FOCUSED); ?>;
+    }
+    
+    .link-background-focused p {
+        color: <?php echo get_theme_mod( 'link_color_focused', MPAT_DEFAULT_LINK_COLOR_FOCUSED); ?>;
+    }
+
+    .side-menu {
         background-color: <?php echo get_theme_mod( 'sidemenu_bg_color', MPAT_DEFAULT_SIDE_MENU_BG_COLOR );?>;
         font-size: <?php echo get_theme_mod( 'sidemenu_font_size', MPAT_DEFAULT_SIDE_MENU_FONT_SIZE);?>px;
         line-height: <?php echo get_theme_mod('sidemenu_line_height', MPAT_DEFAULT_SIDE_MENU_LINE_HEIGHT);?>px;
         color: <?php echo get_theme_mod( 'sidemenu_font_color', MPAT_DEFAULT_SIDE_MENU_FONT_COLOR );?>;
         width: <?php echo get_theme_mod( 'sidemenu_width', MPAT_DEFAULT_SIDE_MENU_WIDTH );?>px;
-      }
-
-      .side-menu .side-menu-item-active {
-          background-color: <?php echo get_theme_mod( 'sidemenu_line_bg_color_active', MPAT_DEFAULT_SIDE_MENU_LINE_BG_COLOR_ACTIVE);?>;
-          color: <?php echo get_theme_mod( 'sidemenu_font_color_active', MPAT_DEFAULT_SIDE_MENU_FONT_COLOR_ACTIVE ) ;?>;
-      }
-
-      .side-menu hr  {
-        color: <?php echo get_theme_mod(  'sidemenu_separator_color', MPAT_DEFAULT_SIDE_MENU_SEPARATOR_COLOR );?>;
-      }
-
-
-      .page-element-content svg{
-      fill: <?php echo get_option( 'iconset' );?>;
-          opacity: <?php echo get_option( 'iconset_opacity' );?>;
     }
 
-      .focused div svg{
-      fill: <?php echo get_option( 'iconset_focused' );?>;
-          opacity: <?php echo get_option( 'iconset_focused_opacity' );?>;
+    .side-menu .side-menu-item-active {
+        background-color: <?php echo get_theme_mod( 'sidemenu_line_bg_color_active', MPAT_DEFAULT_SIDE_MENU_LINE_BG_COLOR_ACTIVE);?>;
+        color: <?php echo get_theme_mod( 'sidemenu_font_color_active', MPAT_DEFAULT_SIDE_MENU_FONT_COLOR_ACTIVE ) ;?>;
+    }
+
+    .side-menu hr {
+       color: <?php echo get_theme_mod(  'sidemenu_separator_color', MPAT_DEFAULT_SIDE_MENU_SEPARATOR_COLOR );?>;
+    }
+
+
+    .page-element-content svg{
+        fill: <?php echo get_option( 'iconset' );?>;
+        opacity: <?php echo get_option( 'iconset_opacity' );?>;
+    }
+
+    
+    .focused div svg{
+        fill: <?php echo get_option( 'iconset_focused' );?>;
+        opacity: <?php echo get_option( 'iconset_focused_opacity' );?>;
     }
 
     .active div svg{
-      fill: <?php echo get_option( 'iconset_active' );?>;
-          opacity: <?php echo get_option( 'iconset_active_opacity' );?>;
+        fill: <?php echo get_option( 'iconset_active' );?>;
+        opacity: <?php echo get_option( 'iconset_active_opacity' );?>;
     }
+   
     
-    .menu-component .menu-item-active span{
+    .menu-component .menu-item-active span,
+    .vertical-menu-component .menu-item-active span
+    .horizontal-menu-component .menu-item-active span {
         font-size: <?php echo get_theme_mod( 'general_menu_font_size_active', MPAT_DEFAULT_GENERAL_MENU_FONT_SIZE_ACTIVE);?>px;
         font-weight: <?php echo get_theme_mod( 'general_menu_text_weight_active', MPAT_DEFAULT_GENERAL_MENU_TEXT_WEIGHT_ACTIVE); ?>;
         color: <?php echo get_theme_mod( 'general_menu_font_color_active', MPAT_DEFAULT_GENERAL_MENU_FONT_COLOR_ACTIVE ) ;?>;
@@ -1242,7 +1249,9 @@ function mpat_customizer_css()
         line-height: <?php echo get_theme_mod('general_menu_line_height_active', MPAT_DEFAULT_GENERAL_MENU_LINE_HEIGHT_ACTIVE);?>px;
     }
     
-    .menu-component{
+    .menu-component,
+    .vertical-menu-component,
+    .horizontal-menu-component {
         font-size: <?php echo get_theme_mod( 'general_menu_font_size', MPAT_DEFAULT_GENERAL_MENU_FONT_SIZE);?>px;
         color: <?php echo get_theme_mod( 'general_menu_font_color', MPAT_DEFAULT_GENERAL_MENU_FONT_COLOR ) ;?>;
         line-height: <?php echo get_theme_mod('general_menu_line_height', MPAT_DEFAULT_GENERAL_MENU_LINE_HEIGHT);?>px;
