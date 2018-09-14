@@ -1157,25 +1157,33 @@ function mpat_customizer_css()
       }
 
 
-        .video-controls-container,.video360-controls-container{
-            background-color: <?php echo get_option( 'playercontrols_bg_color' );?>;
-            height: <?php echo get_theme_mod( 'playercontrols_height' ); ?>px;
-        }
-        .video-button.active,.button-360.active{
-            background-color: <?php echo get_option( 'playercontrols_highlight_color' );?>;
-        }
-        .video-progressinfo .video-time-elapsed, .video-progressinfo .video-time-full,
-        .video360-progressinfo .video360-time-elapsed, .video360-progressinfo .video360-time-full {
-            line-height: <?php echo get_theme_mod( 'playercontrols_height' )?get_theme_mod( 'playercontrols_height' )+4:"" ?>px;
-            font-size: <?php echo get_theme_mod( 'playercontrols_text_size' ); ?>px;
-        }
-        .page_arrow_down, .page_arrow_up{
-          fill: <?php echo get_option( 'icon_arrow' );?>;
-          opacity: <?php echo get_option( 'icon_arrow_opacity' );?>;
-            left: <?php echo (640-(get_option( 'icon_arrow_width' )/2));?>px;
-          width: <?php echo get_option( 'icon_arrow_width' );?>px;
-            height: <?php echo get_option( 'icon_arrow_width' );?>px;
-      }
+    .video-controls-container,.video360-controls-container{
+        background-color: <?php echo get_option( 'playercontrols_bg_color' );?>;
+        height: <?php echo get_theme_mod( 'playercontrols_height' ); ?>px;
+    }
+    .video-button.active,.button-360.active{
+        background-color: <?php echo get_option( 'playercontrols_highlight_color' );?>;
+    }
+    .video-progressinfo .video-time-elapsed, .video-progressinfo .video-time-full,
+    .video360-progressinfo .video360-time-elapsed, .video360-progressinfo .video360-time-full {
+        line-height: <?php echo get_theme_mod( 'playercontrols_height' )?get_theme_mod( 'playercontrols_height' )+4:"" ?>px;
+        font-size: <?php echo get_theme_mod( 'playercontrols_text_size' ); ?>px;
+    }
+    .page_arrow_down, .page_arrow_up{
+        fill: <?php echo get_option( 'icon_arrow' );?>;
+        opacity: <?php echo get_option( 'icon_arrow_opacity' );?>;
+        left: <?php echo (640-(get_option( 'icon_arrow_width' )/2));?>px;
+        width: <?php echo get_option( 'icon_arrow_width' );?>px;
+        height: <?php echo get_option( 'icon_arrow_width' );?>px;
+    }
+
+    .page_arrow_right, .page_arrow_left {
+        fill: <?php echo get_option( 'icon_arrow' );?>;
+        opacity: <?php echo get_option( 'icon_arrow_opacity' );?>;
+        top: <?php echo (310-(get_option( 'icon_arrow_width' )/2));?>px;
+        width: <?php echo get_option( 'icon_arrow_width' );?>px;
+        height: <?php echo get_option( 'icon_arrow_width' );?>px;
+    }
 
       .link-background{
           background-color: <?php echo get_theme_mod( 'link_background_color', MPAT_DEFAULT_LINK_BACKGROUND_COLOR); ?>;
