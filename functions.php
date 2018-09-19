@@ -1249,18 +1249,23 @@ function mpat_customizer_css()
         line-height: <?php echo get_theme_mod('general_menu_line_height_active', MPAT_DEFAULT_GENERAL_MENU_LINE_HEIGHT_ACTIVE);?>px;
     }
     
-    .menu-component,
-    .vertical-menu-component,
-    .horizontal-menu-component {
+    .vertical-menu-component div,
+    .horizontal-menu-component div {
         font-size: <?php echo get_theme_mod( 'general_menu_font_size', MPAT_DEFAULT_GENERAL_MENU_FONT_SIZE);?>px;
         color: <?php echo get_theme_mod( 'general_menu_font_color', MPAT_DEFAULT_GENERAL_MENU_FONT_COLOR ) ;?>;
         line-height: <?php echo get_theme_mod('general_menu_line_height', MPAT_DEFAULT_GENERAL_MENU_LINE_HEIGHT);?>px;
         font-weight: <?php echo get_theme_mod( 'general_menu_text_weight', MPAT_DEFAULT_GENERAL_MENU_TEXT_WEIGHT); ?>;
+    }
+
+    .menu-component div {
+        padding: <?php echo get_theme_mod( 'general_menu_padding', MPAT_DEFAULT_GENERAL_MENU_PADDING);?>px;
+    }
+
+    .menu-component {
         border-width: <?php echo get_theme_mod( 'general_menu_border_width', MPAT_DEFAULT_GENERAL_MENU_BORDER_WIDTH); ?>px;
         border-radius: <?php echo get_theme_mod( 'general_menu_border_radius', MPAT_DEFAULT_GENERAL_MENU_BORDER_RADIUS); ?>px;
         border-color: <?php echo get_theme_mod( 'general_menu_border_color', MPAT_DEFAULT_GENERAL_MENU_BORDER_COLOR ) ;?>;
         background-color: <?php echo get_theme_mod( 'general_menu_background_color', MPAT_DEFAULT_GENERAL_MENU_BACKGROUND_COLOR);?>;
-        padding: <?php echo get_theme_mod( 'general_menu_padding', MPAT_DEFAULT_GENERAL_MENU_PADDING);?>px;
     }
     
     .gallery-component{
