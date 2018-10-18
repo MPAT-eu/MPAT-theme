@@ -496,6 +496,9 @@ Text Domain: mpat
 .video-button.active {
     background-color: rgba(100,100,100, 1);
 }
+.video-button.deactivated {
+    opacity: 0.3;
+  }
 
 .video-progressinfo {
     float: left;
@@ -514,6 +517,12 @@ Text Domain: mpat
     color: white;
     text-align: center;
 }
+.video-time-full.video-live-dot::before {
+    content: "•";
+    color: red;
+    margin-right: 2px;
+  }
+
 .video-progressinfo .video-progressbar{
     width: 70%;
 }
