@@ -108,11 +108,11 @@ Text Domain: mpat
 }
 
 .page_arrow_right{
-    right: 0px;
+    right: 10px;
 }
 
 .page_arrow_left {
-    left: 0px;
+    left: 10px;
 }
 
 .page_arrow_down, .page_arrow_up{
@@ -120,10 +120,10 @@ Text Domain: mpat
 }
 
 .page_arrow_down{
-    bottom: 0;
+    bottom: 10px;
 }
 .page_arrow_up{
-    top: 0;
+    top: 10px;
 }
 
 .ONTEXTRIGHTup {
